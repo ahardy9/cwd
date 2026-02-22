@@ -2,14 +2,99 @@
 <html>
 <head>
 
-	<!--
-	About this page:
+	<!--About this page:
 
-	-->
-	<title>Unbranding</title>
+This project unbrands Coca-Cola’s corporate identity through critiquing their environmental energy consumption and their hidden language. Coca-Cola’s branding emphasizes refreshment, happiness, and the experience of drinking beverages ice-cold, yet this  depends on frigeration systems, global transportation networks, and continuous energy use.
+
+By transforming recognizable brand elements into visuals that highlight energy waste, this makes viewers reconsider how corporate branding can change environmental impact.-->
+
+
+	<title>Unbranding Coca Cola</title>
 	
+<style>
+	body {background-color: #F00913; font-family:sans-serif;font-size: -20px}	
+	h1 {
+	    color: white;
+	    text-align: left;     
+	    font-size: 25px;       
+	    margin-top: -40px;     
+	    margin-left: 675px;    
+	}
+
+	h2 {
+		color: white;
+	    text-align: left;     
+	    font-size: 30px;       
+	    margin-top: -225px;     
+	    margin-left: 670px; 
+
+	}
+#photos {
+    width: 400px;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 100px;
+
+    background-image: url("assets/images/cokefridge.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo {
+   width: 800px;
+   display: block;
+   margin-top: 10px;
+   margin-left: 275px;
+}
+
+
+
+#photos:hover {background-image: url(assets/images/vumeter.gif);
+	
+}
+	</style>
+
 </head>
 <body>
-	<h1>Hello, world!</h1>
+
+<div id="photos">
+    <img class="logo" src="assets/images/logo4.png" alt="Improved Coca Cola logo">
+</div>
+	
+	<h1>ORIGINAL TASTE</h1>
+	<h2> Enjoy </h2>
+
+		<script type="text/javascript">
+		
+	let targetElement= document.querySelector("#everything");
+
+	targetElement.addEventListener("mouseover", function (){console.log ("Hey this worked!");}
+
+// <!--
+// Portions of CSS related to margin and positioning were referenced from:
+// https://www.w3schools.com/css/css_margin.asp
+// https://www.w3schools.com/css/css_positioning.asp
+
+// These resources were used to understand how margin affects layout flow
+// and how background images are applied and scaled in CSS.
+
+//  Code was also provided from the book or learned from examples in class. 
+// -->
+// <!--
+// What I learned from this assignment:
+
+// Margin-top moves the text up or down on the page (negative values move it upward). Margin-left shifts the text horizontally to the right.
+
+// The <div id="photos"> acts as a container for the refrigerator image. Instead of using an <img> tag for the fridge, a background-image is applied in CSS. I had isses with my fridge image getting cropped. So I used Background-size to ensures the full image fits inside the div without being cropped.
+// Background-repeat: no-repeat prevents the image from tiling. Background-position: center keeps it centered inside the box.
+
+// The .logo class styles the Coca-Cola logo image inside the div. 
+// Display: block allows margin spacing to work properly, and margin-left/margin-top adjust its placement on the page.
+
+// The #photos:hover rule changes the background image when the user moves their mouse over the fridge, creating an interactive effect that supports the environmental critique.
+// -->
+
+
 </body>
 </html>
