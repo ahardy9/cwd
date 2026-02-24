@@ -12,42 +12,47 @@ By transforming recognizable brand elements into visuals that highlight energy w
 	
 <style>
 	body {background-color: #F00913; font-family:sans-serif;font-size: 20px}	
-	h1 {
-	    color: white;
-	    text-align: left;     
-	    font-size: 25px;       
-	    margin-top: -40px;     
-	    margin-left: 675px;    
-	}
 
-	h2 {
+	
+/*enjoy*/
+	h1 {
 		color: white;
 	    text-align: left;     
 	    font-size: 30px;       
-	    margin-top: -215px;     
-	    margin-left: 670px; 
+	    margin-top: -750px;     
+	    margin-left: 680px; 
+	    padding-top:-100px; 
+	    /*line-height: -9000;*/
+	}
 
+	/*Orginal taste*/
+	h2 {
+	    color: white;
+	    text-align: left;     
+	    font-size: 20px;       
+	    margin-top: 150px;  
+	    margin-left: 675px; 
+	    padding-bottom: 100px;   
 	}
 
 #photos {
-    width: 400px;
+    width: 500px;
     height: 400px;
-    margin-top: 40px;
+    margin-top: -50px;
     margin-left: 100px;
 
 }
-/*I got this fridge image from https://liketoyzab.click/product_details/61667959.html*/
 
 .logo {
    width: 800px;
-   margin-top: 10px;
-   margin-left: 275px;
+   margin-top: -20px;
+   margin-left: 375px;
 }
 
 #cokefridge {
-   width: 300px;
-   margin-top: -605px;
-   margin-left: 25px;
+   width: 376px;
+   margin-top: -1250px;
+   margin-left: 40px;
 }
 /*I got this fridge image from https://liketoyzab.click/product_details/61667959.html*/
 
@@ -59,6 +64,7 @@ By transforming recognizable brand elements into visuals that highlight energy w
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;}
+
 /* I got this vumeter gif from:
 https://web.archive.org/web/20091022122811/http://geocities.com/thetropics/lagoon/8893/page1.html
 
@@ -71,14 +77,18 @@ https://www.w3schools.com/css/css_background_repeat.asp
 </head>
 <body>
 
+<img class="logo" src="assets/images/logo4.png" alt="Improved Coca Cola logo">
+
 <div id="photos">
-    <img class="logo" src="assets/images/logo4.png" alt="Improved Coca Cola logo">
-<img id="cokefridge" src="assets/images/cokefridge.png" alt="Old Coca Cola fridge">
+<!-- <img class="logo" src="assets/images/logo4.png" alt="Improved Coca Cola logo"> -->
+<img id="cokefridge" src="assets/images/cokefridge.png" alt=" Coca Cola fridge">
 
 </div>
 	
-	<h1>ORIGINAL TASTE</h1>
-	<h2> Enjoy </h2>
+	<h1> Enjoy </h1>
+
+	<h2>ORIGINAL TASTE</h2>
+
 
 	<script type="text/javascript"> function setNewImage(){
 	}
@@ -92,6 +102,8 @@ cokefridgeImage.addEventListener("mouseover", function () {
 cokefridgeImage.addEventListener("mouseout", function () {
     cokefridgeImage.src = "assets/images/cokefridge.png";
 });
+
+{console.log ("Save the world!");}
 
 // <!--Portions of CSS related to margin and positioning were referenced from: https://www.w3schools.com/css/css_margin.asp and https://www.w3schools.com/css/css_positioning.asp
 
