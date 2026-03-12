@@ -1,55 +1,101 @@
 <!doctype html>
 <html>
 <head>
+<style>
+body {
+    background-color: #12219A;
+}
+.flex-container {
+      display: flex;
+    gap: 20px;
+    width: 100%;
 
-<title>CSS Battles</title>
+}
+ #square {
+    margin-top:20px;
+    margin-left:12px;
+    width: 50px;
+    height: 50px;
+    background: #70CCDB;
+  }
+  #circle {
+  height: 50px;
+  width: 50px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 20px;
+  }
+    #square2 {
+    /*/align-item: right;/*/
+   margin-top:20px;
+   /*/margin-right:12px;/*/
+   width: 50px;
+   height: 50px;
+   background: #70CCDB;
+   /*/margin-left: 1150px;/*/
+}
+   #circle2 {
+  height: 50px;
+  width: 50px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 20px;
+margin-left: 950px;
+  }
 
+.flex-container2 {
+      display: flex;
+    gap: 20px;
+    width: 100%;
 
+   #square3 {
+    margin-top:580px;
+    margin-left:12px;
+    width: 50px;
+    height: 50px;
+    background: #70CCDB;
+  }
+  #circle3 {
+  height: 50px;
+  width: 50px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 580px;
+  }
+    #square4 {
+    /*/align-item: right;/*/
+   margin-top:580px;
+   /*/margin-right:12px;/*/
+   width: 50px;
+   height: 50px;
+   background: #70CCDB;
+margin-left: 950px;
+}
+   #circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: #DB5EAD;
+  border-radius: 100%;
+  margin-top: 580px;
+  }
+
+</style>
 
 </head>
 
-
-	<div></div>
-	<style>
-	  Body{
-	  	background-color: #12219A;
-	  }
-
-	  div {
-	    width: 50px;
-	    height: 50px;
-	    margin-top:20px;
-	    margin-left:12px; 
-	    background-color:#70CCDB;
-.square{
-	    width: 50px;
-	    height: 50px;
-	    margin-top:20px;
-	    margin-left:12px; 
-	    background-color:#70CCDB;
-	  }
-
-.circle{
-	    width: 50px;
-	    height: 50px;
-	    margin-top:20px;
-	    margin-left:12px; 
-	    background-color:#70CCDB;
-	    border-radius: 100%;
-
-	  }
-
-
-	  }
-
-
-
-
 <body>
-<div class="square">
-<div class = "circle">
+<div class="flex-container">
+    <div id="square"></div>
+    <div id="circle"></div>
+    <div id="circle2"></div>
+    <div id="square2"></div>
+    </div>
+<div class="flex-container2">
+    <div id="circle3"></div>
+    <div id="square3"></div>
+    <div id="square4"></div>
+    <div id="circle4"></div>
 
-
-</style>
+    </div>
 </body>
 </html>
