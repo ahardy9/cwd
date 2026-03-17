@@ -7,46 +7,138 @@
 	<!-- 
 	About this page:
 
+	For this project, I created a fake newspaper that reports on my everyday life as if it were breaking news. I was inspired by the structure and tone of traditional news websites, but I used humor and exaggeration to turn ordinary college experiences into dramatic headlines. 
+
+	In my design, I used bold headlines, section layouts, and visuals to mimic a real newspaper while keeping the content personal and relatable. 
+
+	Overall, my goal was to create a design that feels realistic at first glance, but reveals a more playful and personal narrative the longer you look at it.
 
 	-->
 	<title>Fake News</title>
 	
-  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">  	
+  	<style>
   	
   	<style>
-  		
-	.col {
-		background-color: blueviolet;
-			height:100px;
-	}
-	.first {
-		background-color: hotpink;
-	}
-  	
+  		body {
+      background-color: #f5f2e7;
+      font-family: 'Libre Baskerville', serif;
+      color: #111;
+      line-height: 1.6;
+    }
+/* Got this font idea from: https://maxibestof.one/typefaces/libre-baskerville*/
 
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 50px;
+      margin-top: 20px;
+      border-bottom: 2px solid black;
+      padding-bottom: 10px;
+    }
 
-  	</style>
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+  		.col {
+  		     border-right: 1px solid #ccc;
+  		     padding: 15px;
+  		     text-align: left;
+  		   }
+
+  		.first {
+  		     border-right: 1px solid #ccc;
+  		   }
+
+  		img {
+  		     width: 100%;
+  		     height: auto;
+  		     margin-bottom: 10px;
+  		   }
+
+  		.updates {
+  		     font-size: 12px;
+  		     margin-top: 5px;
+  		     cursor: pointer;
+  		     color: #555;
+  		   }
+
+  		 .dots {
+  		     text-align: left;
+  		     margin-top: 10px;
+  		     margin-bottom: 10px;
+  		   }
+
+  		.dots span {
+  		     display: inline-block;
+  		     width: 8px;
+  		     height: 8px;
+  		     margin: 5px;
+  		     background-color: #ccc;
+  		     border-radius: 50%;
+  		   }
+/* I learned how to add the dots from: https://www.w3schools.com/howto/howto_css_circles.asp*/
+
+</style>
 </head>
 <body>
 
-	<h1>Hello, world!</h1>
+	<h1>The Alyson Hardy Times</h1>
 
-	<div class="container text-center">
+<p style="text-align:center;">
+    LIVE | Opinion | Social Media | Campus News | Sports | Lifestyle
+</p>
+
+<div class="container text-left">
   <div class="row">
-    <div class="col-12 first">
-      Column
+
+    <div class="col-12 col-md-6 col-lg-3 first">
+      <h3>Breaking News: Alyson Finally Gets 8 Hours of Sleep</h3>
+      <p>In an unprecedented turn of events late Tuesday night, local college student Alyson reportedly achieved a full eight hours of sleep, leaving friends, classmates, and campus observers both shocked and impressed. Sources say the rare occurrence followed a long stretch of late-night assignments, scrolling through social media, and promising herself “just one more episode” before bed.</p>
+     <p class="updates">See More Updates →</p>
+      <h3 class="mt-2">Coffee Consumption Reaches Record High</h3>
+      <p>Coffee consumption among local college student Alyson has reportedly reached an all-time high this semester, according to sources close to her daily routine. With early classes, assignments, and social media work filling her schedule, coffee has quickly become an essential part of her productivity strategy.</p>
+     <p class="updates">Read More Here→</p>
+
     </div>
-    <div class="col second">
-      Column
+
+    <div class="col-12 col-md-6 col-lg-5 second">
+      <img src="Assets/Sammy.jpg" class="img-fluid">
+    <div class="dots">
+  	<span></span>
+ 	 <span></span>
+ 	 <span></span>
+ 	 <span></span>
+     <h3 class="mt-2">End of an Era: Student Experiences “First Last Day” of College, Emotions Mixed</h3>
+
+</div>
+      <p>In a bittersweet start to senior year, local student Alyson attended her first “last first day” of college, balancing excitement for the future with disbelief that it’s all coming to an end. While she arrived with the usual back-to-school energy, sources say the reality of final classes, last assignments, and upcoming graduation has yet to fully set in. Experts confirm this stage is commonly marked by a mix of motivation, nostalgia, and mild denial.
+
+	</p>
     </div>
-    <div class="col third">
-      Column
+
+    <div class="col-12 col-lg-4 third">
+      <img src="Assets/Selfie.jpg" class="img-fluid">
+      <h3>Breaking News: Student Logs Into Zoom Class On Time for First Time All Semester</h3>
+      <p>In a surprising turn of events, local college student Alyson reportedly joined her Zoom class before it even started, logging in a full two minutes early. Known for her usual last-second arrivals and quick “sorry, my WiFi was acting up” excuse, today’s early appearance left classmates shocked. Experts are unsure whether this marks a new level of productivity or was simply an accidental moment of responsibility.
+
+	</p>
     </div>
   </div>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
