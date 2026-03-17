@@ -20,9 +20,8 @@
 	<!-- Google Fonts -->
 	  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Libre+Baskerville&display=swap" rel="stylesheet">  	
   	<style>
-  	
-  	<style>
-  		body {
+  
+  	body {
       background-color: #f5f2e7;
       font-family: 'Libre Baskerville', serif;
       color: #111;
@@ -51,36 +50,36 @@
       margin-bottom: 15px;
     }
 
-  		.col {
+  	.col {
   		     border-right: 1px solid #ccc;
   		     padding: 15px;
   		     text-align: left;
   		   }
 
-  		.first {
+  	.first {
   		     border-right: 1px solid #ccc;
   		   }
 
-  		img {
+  	.img {
   		     width: 100%;
   		     height: auto;
   		     margin-bottom: 10px;
   		   }
 
-  		.updates {
+  	.updates {
   		     font-size: 12px;
   		     margin-top: 5px;
   		     cursor: pointer;
   		     color: #555;
   		   }
 
-  		 .dots {
-  		     text-align: left;
+  	.dots {
+  		     text-align: center;
   		     margin-top: 10px;
   		     margin-bottom: 10px;
   		   }
 
-  		.dots span {
+  	.dotsspan {
   		     display: inline-block;
   		     width: 8px;
   		     height: 8px;
@@ -89,13 +88,32 @@
   		     border-radius: 50%;
   		   }
 /* I learned how to add the dots from: https://www.w3schools.com/howto/howto_css_circles.asp*/
+	.date {
+	    text-align: center;                  /* aligns date to the top-right */
+	    font-size: 14px;                    /* smaller than headline */
+	    font-family: 'Libre Baskerville', serif; /* matches body text */
+	    color: #555;                        /* light gray for newspaper feel */
+	    margin-top: 10px;
+	    margin-right: 15px;                 /* spacing from right edge */
+	}
+.third .mini-article {
+    border-bottom: 1px solid #ccc; /* separates each mini-article */
+    padding-bottom: 15px;           /* much smaller padding */
+}
 
+.third .mini-article:last-child {
+    border-bottom: none; /* remove border for the last one */
+}
+
+.third img {
+    margin-bottom: 10px; /* spacing below images */
+}
 </style>
 </head>
 <body>
 
 	<h1>The Alyson Hardy Times</h1>
-
+<p class="date">Wednesday, March 17, 2026</p>
 <p style="text-align:center;">
     LIVE | Opinion | Social Media | Campus News | Sports | Lifestyle
 </p>
@@ -110,6 +128,9 @@
       <h3 class="mt-2">Coffee Consumption Reaches Record High</h3>
       <p>Coffee consumption among local college student Alyson has reportedly reached an all-time high this semester, according to sources close to her daily routine. With early classes, assignments, and social media work filling her schedule, coffee has quickly become an essential part of her productivity strategy.</p>
      <p class="updates">Read More Here→</p>
+      <h3>Campus Intramural Pickleball Team Wins First Game of the Season</h3>
+	<p>Local college student Alyson and her teammates scored an impressive victory in their first intramural Pickleball game of the semester, leaving fans and fellow students cheering.</p>
+	<p class="updates">See More Updates →</p>
 
     </div>
 
@@ -121,20 +142,35 @@
  	 <span></span>
  	 <span></span>
      <h3 class="mt-2">End of an Era: Student Experiences “First Last Day” of College, Emotions Mixed</h3>
+	</div>
+    <p>In a bittersweet start to senior year, local student Alyson attended her first “last first day” of college, balancing excitement for the future with disbelief that it’s all coming to an end. While she arrived with the usual back-to-school energy—smiling, chatting with friends, and carrying a carefully curated selection of notebooks and coffee cups—sources say the reality of final classes, last assignments, and the looming prospect of graduation has yet to fully sink in. Between navigating crowded hallways, catching up with professors she’s known for years, and taking selfies in familiar corners of campus, Alyson reportedly experienced waves of nostalgia mixed with anxious anticipation for the next chapter. Experts confirm that this stage of college life is often marked by a complicated blend of motivation, sentimentality, and mild denial, as students struggle to reconcile the excitement of future opportunities with the finality of leaving behind the routines, friendships, and everyday moments that have defined their undergraduate experience. Observers note that moments like these are both deeply personal and universally relatable, serving as a reminder that endings often carry the weight of reflection as much as the promise of new beginnings.
+	</p>
+    </div>
+
+  <div class="col-12 col-lg-4 third d-flex flex-column gap-4">
+  
+  <!-- Mini-Row 1 -->
+  <div class="mini-article">
+    <img src="Assets/Selfie.jpg" class="img-fluid">
+    <h3>Breaking News: Student Logs Into Zoom Class On Time for First Time All Semester</h3>
+    <p>In a surprising turn of events, local college student Alyson reportedly joined her Zoom class before it even started, logging in a full two minutes early. Known for her usual last-second arrivals and quick “sorry, my WiFi was acting up” excuse, today’s early appearance left classmates shocked. Experts are unsure whether this marks a new level of productivity or was simply an accidental moment of responsibility.</p>
+  </div>
+
+  <!-- Mini-Row 2 -->
+  <div class="mini-article">
+    <h3>Another Story: Campus Cafe Runs Out of Coffee</h3>
+    <p>Students were shocked to discover the campus cafe ran out of coffee during peak hours. Early reports suggest an unprecedented spike in caffeine consumption coinciding with midterms week.</p>
+  </div>
+
+  <!-- Mini-Row 3 -->
+  <div class="mini-article">
+    <h3>Upcoming Event: Spring Festival Announced</h3>
+    <p>The university announced this year’s Spring Festival will be bigger than ever. Students can expect games, live music, and plenty of free snacks.</p>
+  </div>
 
 </div>
-      <p>In a bittersweet start to senior year, local student Alyson attended her first “last first day” of college, balancing excitement for the future with disbelief that it’s all coming to an end. While she arrived with the usual back-to-school energy, sources say the reality of final classes, last assignments, and upcoming graduation has yet to fully set in. Experts confirm this stage is commonly marked by a mix of motivation, nostalgia, and mild denial.
 
-	</p>
-    </div>
-
-    <div class="col-12 col-lg-4 third">
-      <img src="Assets/Selfie.jpg" class="img-fluid">
-      <h3>Breaking News: Student Logs Into Zoom Class On Time for First Time All Semester</h3>
-      <p>In a surprising turn of events, local college student Alyson reportedly joined her Zoom class before it even started, logging in a full two minutes early. Known for her usual last-second arrivals and quick “sorry, my WiFi was acting up” excuse, today’s early appearance left classmates shocked. Experts are unsure whether this marks a new level of productivity or was simply an accidental moment of responsibility.
-
-	</p>
-    </div>
+</div>
   </div>
 </div>
 
