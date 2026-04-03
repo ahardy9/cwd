@@ -1,10 +1,8 @@
-
-let myForm = document.querySelector("#myForm");
+let myForm = document.querySelector("#susForm");
 
 myForm.addEventListener("submit", (event) => {
-	event.preventDefault();
-	//console.log("Hello");
+  event.preventDefault();
 
-console.log (this.msg.value)
+  console.log("Form submitted");
 });
 

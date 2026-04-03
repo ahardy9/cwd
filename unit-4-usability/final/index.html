@@ -14,11 +14,9 @@
 
   <title>Nordstrom Usability Test Report</title>
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Reference: Bootstrap 5 Tutorial - https://www.w3schools.com/bootstrap5/ -->
 
-  <!-- Custom Styles -->
   <style>
     body {
       background-color: #B3E5FC !important; /* baby blue background */
@@ -132,7 +130,7 @@
 
   <!-- Key Insights -->
   <section class="mb-5">
-    <h2>Key Insights</h2>
+<h2 class="sky-border-bottom">Key Insights</h2>
     <ul>
       <li>User prefers scrolling over filters and sorting.</li>
       <li>Sorting/filtering tools are not easily noticed.</li>
@@ -143,7 +141,7 @@
 
   <!-- SUS Calculator Section -->
   <section class="mb-5">
-    <h2>System Usability Scale (SUS)</h2>
+  <h2 class="sky-border-bottom">System Usability Scale (SUS)</h2>
     <p>On a scale of 1-5 where 1 is strongly disagree and 5 is strongly agree.</p>
 
     <form id="susForm" class="row g-3"> <!--W3Schools: Bootstrap Forms Grid- https://www.w3schools.com/bootstrap5/bootstrap_forms.php -->
@@ -194,6 +192,22 @@ function calculateSUS() {
   score = score * 2.5;
   document.getElementById("result").innerText = "Your SUS Score: " + score;
 }
+<!--JavaScritpt helpful cites:
+
+https://www.w3schools.com/js/js_loop_for.asp
+
+https://www.w3schools.com/js/js_htmldom_elements.asp
+
+https://www.w3schools.com/jsref/jsref_parseint.asp
+
+https://www.w3schools.com/js/js_functions.asp
+
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+https://www.w3schools.com/jsref/prop_html_innertext.asp
+
+https://www.w3schools.com/js/-->
+
 </script>
 
 </body>
