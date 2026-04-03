@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+  This usability report evaluates Nordstrom.com. 
+  Bootstrap 5 was used for layout and styling.
+  Forms demonstrate JS interaction.
+  SUS calculator included for usability evaluation.
+  References to W3Schools included for design elements.
+  -->
+
+  <title>Nordstrom Usability Test Report</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Reference: Bootstrap 5 Tutorial - https://www.w3schools.com/bootstrap5/ -->
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      background-color: #B3E5FC !important; /* baby blue background */
+      font-family: sans-serif;
+      font-size: 20px;
+    }
+
+    h2.sky-border-bottom {
+      border-bottom: 3px solid #007BFF; /* blue underline for section headers */
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    h4.task-title {
+      font-weight: bold; /* bold the task titles */
+      font-size: 1.25rem; /* slightly larger for emphasis */
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container my-4"> <!-- W3Schools: Bootstrap Containers https://www.w3schools.com/bootstrap5/bootstrap_get_started.php -->
+
+  <!-- Page Title -->
+  <h1 class="mb-4">Nordstrom.com Usability Test Report</h1> <!-- W3Schools: Bootstrap Spacing - https://www.w3schools.com/bootstrap5/bootstrap_spacing.php -->
+
+  <!-- Overview Section -->
+  <section class="mb-5">
+    <h2>Overview</h2>
+    <p>
+      This usability test analyzed a user completing common shopping and service tasks on Nordstrom.com. 
+      Overall, the user was confident navigating the site and excited about plush gift items, but had 
+      some difficulty locating the highest-priced products and the in-store styling service.
+    </p>
+  </section>
+
+  <!-- Tasks Section -->
+  <section class="mb-5">
+    <h2 class="sky-border-bottom">Tasks</h2>
+
+    <!-- Task 1 -->
+    <div class="row my-5 align-items-center">
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-2 text-center">
+        <img src="assets/shoes.png" class="img-fluid w-75" alt="screenshot of Nordstrom shoes on sale">
+      </div>
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <h4 class="task-title">1. Find a pair of shoes that is on sale for a first date.</h4>
+        <p>User searched for formal shoes, filtered by sale, and added a size 6M pair to cart. Initial shoes seemed too fancy or expensive.</p>
+        <p>Time: 40.96 secs</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Task 2 -->
+    <div class="row my-5 align-items-center">
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-2 text-center">
+        <img src="assets/gifts.png" class="img-fluid w-75" alt="screenshot of Nordstrom plush toy selection">
+      </div>
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <h4 class="task-title">2. Find a gift item under 100 dollars for a friend.</h4>
+        <p>User selected a plush toy under $100 (dragon plush) and was excited about the item. No major difficulties navigating.</p>
+        <p>Time: 24.57 secs</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Task 3 -->
+    <div class="row my-5 align-items-center">
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-2 text-center">
+        <img src="assets/wallart.png" class="img-fluid w-75" alt="screenshot of Nordstrom wall art section">
+      </div>
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <h4 class="task-title">3. Find the highest-priced wall art for your new house.</h4>
+        <p>User scrolled through wall art options but did not sort by price, so they did not immediately select the highest-priced item.</p>
+        <p>Time: 52.23 secs</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Task 4 -->
+    <div class="row my-5 align-items-center">
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-2 text-center">
+        <img src="assets/dress.png" class="img-fluid w-75" alt="screenshot of Nordstrom wedding apparel">
+      </div>
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <h4 class="task-title">4. Find apparel appropriate for a Wedding.</h4>
+        <p>User selected a blue dress in size 4 appropriate for a wedding. User was satisfied with available options.</p>
+        <p>Time: 45.12 secs</p>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Task 5 -->
+    <div class="row my-5 align-items-center">
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6 mb-2 text-center">
+        <img src="assets/appointment.png" class="img-fluid w-75" alt="screenshot of Nordstrom in-store styling appointment page">
+      </div>
+      <div class="col-12 col-md-6 col-lg-12 col-xl-6">
+        <h4 class="task-title">5. Book an in-store styling appointment for women at Tysons Corner.</h4>
+        <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer.</p>
+        <p>Time: 140.52 secs</p> <!-- converted 2:20.52 to seconds -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Key Insights -->
+  <section class="mb-5">
+    <h2>Key Insights</h2>
+    <ul>
+      <li>User prefers scrolling over filters and sorting.</li>
+      <li>Sorting/filtering tools are not easily noticed.</li>
+      <li>Plush items create strong engagement and excitement.</li>
+      <li>Service navigation could be more intuitive.</li>
+    </ul>
+  </section>
+
+  <!-- SUS Calculator Section -->
+  <section class="mb-5">
+    <h2>System Usability Scale (SUS)</h2>
+    <p>On a scale of 1-5 where 1 is strongly disagree and 5 is strongly agree.</p>
+
+    <form id="susForm" class="row g-3"> <!--W3Schools: Bootstrap Forms Grid- https://www.w3schools.com/bootstrap5/bootstrap_forms.php -->
+      <script>
+        const susQuestions = [
+          "I think that I would like to use this system frequently.",
+          "I found the system unnecessarily complex.",
+          "I thought the system was easy to use.",
+          "I think that I would need the support of a technical person to be able to use this system.",
+          "I found the various functions in this system were well integrated.",
+          "I thought there was too much inconsistency in this system.",
+          "I would imagine that most people would learn to use this system very quickly.",
+          "I found the system very cumbersome to use.",
+          "I felt very confident using the system.",
+          "I needed to learn a lot of things before I could get going with this system."
+        ];
+
+        for (let i = 0; i < susQuestions.length; i++) {
+          document.write(`
+            <div class="col-md-6 mb-3">
+              <label class="form-label">${i+1}. ${susQuestions[i]} (1-5)</label>
+              <input type="number" min="1" max="5" class="form-control" id="q${i+1}" required>
+            </div>
+          `);
+        }
+      </script>
+
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" onclick="calculateSUS()">Calculate SUS Score</button> <!-- W3Schools: Bootstrap Buttons:https://www.w3schools.com/bootstrap5/bootstrap_buttons.php -->
+      </div>
+    </form>
+
+    <div class="mt-4">
+      <h4 id="result"></h4>
+    </div>
+  </section>
+
+<script src="../assets/hello.js"></script> <!-- W3Schools: HTML Script Tag - https://www.w3schools.com/tags/tag_script.asp -->
+
+<script>
+function calculateSUS() {
+  let score = 0;
+  for (let i = 1; i <= 10; i++) {
+    let value = parseInt(document.getElementById(`q${i}`).value);
+    if (i % 2 !== 0) { score += (value - 1); }
+    else { score += (5 - value); }
+  }
+  score = score * 2.5;
+  document.getElementById("result").innerText = "Your SUS Score: " + score;
+}
+</script>
+
+</body>
+</html>
