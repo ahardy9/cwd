@@ -3,212 +3,201 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nordstrom.com Usability Test</title>
+  <title>Nordstrom Usability Test</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
   <style>
     body {
       background-color: #B3E5FC;
       font-family: sans-serif;
-      font-size: 20px;
+      font-size: 18px;
     }
 
     h2.sky-border-bottom {
-      border-bottom: 3px solid #007BFF; /* blue underline */
+      border-bottom: 3px solid #007BFF;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
 
-    h4.task-title {
+    .task-title {
       font-weight: bold;
-      font-size: 1.25rem;
     }
 
-    input { display: block; margin-bottom: 10px; width: 60px; }
+    .sus-question {
+      margin-bottom: 20px;
+    }
+
     #susResult {
-      font-weight: bold; 
-      font-size: 1.2rem; 
-      border-bottom: 3px solid #007BFF; 
-      padding-bottom: 5px; 
-      margin-top: 10px;
+      font-weight: bold;
+      font-size: 1.3rem;
+      border-bottom: 3px solid #007BFF;
+      margin-top: 15px;
+      padding-bottom: 5px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container my-4">
-    <h1 class="mb-4">Nordstrom.com Usability Test Report</h1>
+<div class="container my-4">
 
-    <!-- Overview -->
-    <section class="mb-5">
-      <h2>Overview</h2>
-      <p>
-        This usability test analyzed a user completing common shopping and service tasks on Nordstrom.com. 
-        Overall, the user was confident navigating the site and excited about plush gift items, but had 
-        some difficulty locating the highest-priced products and the in-store styling service.
-      </p>
-    </section>
+<h1 class="mb-4 text-center">Nordstrom.com Usability Test Report</h1>
 
-    <!-- Tasks Section -->
-    <section class="mb-5">
-      <h2 class="sky-border-bottom">Tasks</h2>
+<!-- TASKS -->
+<section class="mb-5">
+<h2 class="sky-border-bottom">Tasks</h2>
 
-      <!-- Task 1 -->
-      <div class="row my-5 align-items-center">
-        <div class="col-12 col-md-6 mb-2 text-center">
-          <img src="assets/shoes.png" class="img-fluid w-75" alt="Nordstrom shoes on sale">
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="task-title">1. Find a pair of shoes that is on sale for a first date.</h4>
-          <p>User searched for formal shoes, filtered by sale, and added a size 6M pair to cart. Initial shoes seemed too fancy or expensive.</p>
-          <p>Time: 40.96 secs</p>
-        </div>
-      </div>
+<!-- Task 1 -->
+<div class="row mb-5">
+  <div class="col-md-6 text-center">
+    <img src="assets/shoes.png" class="img-fluid w-75">
+  </div>
+  <div class="col-md-6">
+    <h4 class="task-title">1. Find a pair of shoes on sale for a first date.</h4>
+    <p>User searched for formal shoes, filtered by sale, and added a size 6M pair to cart. Initial shoes seemed too fancy or expensive.</p>
+    <p><strong>Time:</strong> 40.96 secs</p>
+  </div>
+</div>
 
-      <hr class="my-5">
+<!-- Task 2 -->
+<div class="row mb-5">
+  <div class="col-md-6 text-center">
+    <img src="assets/gifts.png" class="img-fluid w-75">
+  </div>
+  <div class="col-md-6">
+    <h4 class="task-title">2. Find a gift under $100.</h4>
+    <p>User selected a plush toy under $100 (dragon plush) and was excited about the item. No major difficulties navigating.</p>
+    <p><strong>Time:</strong> 24.57 secs</p>
+  </div>
+</div>
 
-      <!-- Task 2 -->
-      <div class="row my-5 align-items-center">
-        <div class="col-12 col-md-6 mb-2 text-center">
-          <img src="assets/gifts.png" class="img-fluid w-75" alt="Nordstrom plush toy selection">
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="task-title">2. Find a gift item under 100 dollars for a friend.</h4>
-          <p>User selected a plush toy under $100 (dragon plush) and was excited about the item. No major difficulties navigating.</p>
-          <p>Time: 24.57 secs</p>
-        </div>
-      </div>
+<!-- Task 3 -->
+<div class="row mb-5">
+  <div class="col-md-6 text-center">
+    <img src="assets/wallart.png" class="img-fluid w-75">
+  </div>
+  <div class="col-md-6">
+    <h4 class="task-title">3. Find the highest-priced wall art.</h4>
+    <p>User scrolled through wall art options but did not sort by price, so they did not immediately select the highest-priced item.</p>
+    <p><strong>Time:</strong> 52.23 secs</p>
+  </div>
+</div>
 
-      <hr class="my-5">
+<!-- Task 4 -->
+<div class="row mb-5">
+  <div class="col-md-6 text-center">
+    <img src="assets/dress.png" class="img-fluid w-75">
+  </div>
+  <div class="col-md-6">
+    <h4 class="task-title">4. Find wedding-appropriate apparel.</h4>
+    <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer</p>
+    <p><strong>Time:</strong> 45.12 secs</p>
+  </div>
+</div>
 
-      <!-- Task 3 -->
-      <div class="row my-5 align-items-center">
-        <div class="col-12 col-md-6 mb-2 text-center">
-          <img src="assets/wallart.png" class="img-fluid w-75" alt="Nordstrom wall art">
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="task-title">3. Find the highest-priced wall art for your new house.</h4>
-          <p>User scrolled through wall art options but did not sort by price, so they did not immediately select the highest-priced item.</p>
-          <p>Time: 52.23 secs</p>
-        </div>
-      </div>
+<!-- Task 5 -->
+<div class="row mb-5">
+  <div class="col-md-6 text-center">
+    <img src="assets/appointment.png" class="img-fluid w-75">
+  </div>
+  <div class="col-md-6">
+    <h4 class="task-title">5. Book a styling appointment.</h4>
+    <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer</p>
+    <p><strong>Time:</strong> 140.52 secs</p>
+  </div>
+</div>
 
-      <hr class="my-5">
-
-      <!-- Task 4 -->
-      <div class="row my-5 align-items-center">
-        <div class="col-12 col-md-6 mb-2 text-center">
-          <img src="assets/dress.png" class="img-fluid w-75" alt="Nordstrom wedding apparel">
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="task-title">4. Find apparel appropriate for a Wedding.</h4>
-          <p>User selected a blue dress in size 4 appropriate for a wedding. User was satisfied with available options.</p>
-          <p>Time: 45.12 secs</p>
-        </div>
-      </div>
-
-      <hr class="my-5">
-
-      <!-- Task 5 -->
-      <div class="row my-5 align-items-center">
-        <div class="col-12 col-md-6 mb-2 text-center">
-          <img src="assets/appointment.png" class="img-fluid w-75" alt="Nordstrom in-store styling appointment">
-        </div>
-        <div class="col-12 col-md-6">
-          <h4 class="task-title">5. Book an in-store styling appointment for women at Tysons Corner.</h4>
-          <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer.</p>
-          <p>Time: 140.52 secs</p>
-        </div>
-      </div>
-    </section>
-
- <section class="mb-5">
-  <h2 class="sky-border-bottom">System Usability Scale (SUS)</h2>
- <p><strong>Please enter a number from 1–5 for each question.</strong></p>
-  <form id="myForm">
-    <label>
-      I think that I would like to use this system frequently.
-      <input type="number" id="q1" min="1" max="5" value="4" required>
-    </label>
-
-    <label>
-      I found the system unnecessarily complex.
-      <input type="number" id="q2" min="1" max="5" value="2" required>
-    </label>
-
-    <label>
-      I thought the system was easy to use.
-      <input type="number" id="q3" min="1" max="5" value="5" required>
-    </label>
-
-    <label>
-      I think that I would need the support of a technical person.
-      <input type="number" id="q4" min="1" max="5" value="2" required>
-    </label>
-
-    <label>
-      I found the various functions in this system were well integrated.
-      <input type="number" id="q5" min="1" max="5" value="4" required>
-    </label>
-
-    <label>
-      I thought there was too much inconsistency in this system.
-      <input type="number" id="q6" min="1" max="5" value="1" required>
-    </label>
-
-    <label>
-      Most people would learn to use this system quickly.
-      <input type="number" id="q7" min="1" max="5" value="5" required>
-    </label>
-
-    <label>
-      I found the system very cumbersome to use.
-      <input type="number" id="q8" min="1" max="5" value="1" required>
-    </label>
-
-    <label>
-      I felt very confident using the system.
-      <input type="number" id="q9" min="1" max="5" value="4" required>
-    </label>
-
-    <label>
-      I needed to learn a lot before getting started with the system.
-      <input type="number" id="q10" min="1" max="5" value="2" required>
-    </label>
-
-    <button type="submit" class="btn btn-primary mt-3">Submit</button>
-    <h4 id="susResult" style="border-bottom:3px solid #007BFF; padding-bottom:5px; margin-top:10px;"></h4>
-
-  </form>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const form = document.getElementById("myForm");
-
-      form.addEventListener("submit", function(event) {
-        event.preventDefault();
-
-        const q1 = Number(document.getElementById("q1").value);
-        const q2 = Number(document.getElementById("q2").value);
-        const q3 = Number(document.getElementById("q3").value);
-        const q4 = Number(document.getElementById("q4").value);
-        const q5 = Number(document.getElementById("q5").value);
-        const q6 = Number(document.getElementById("q6").value);
-        const q7 = Number(document.getElementById("q7").value);
-        const q8 = Number(document.getElementById("q8").value);
-        const q9 = Number(document.getElementById("q9").value);
-        const q10 = Number(document.getElementById("q10").value);
-
-        // SUS calculation
-        const odd = [q1, q3, q5, q7, q9].map(x => x - 1);
-        const even = [q2, q4, q6, q8, q10].map(x => 5 - x);
-
-        const susScore = (odd.concat(even).reduce((a, b) => a + b, 0)) * 2.5;
-
-        document.getElementById("susResult").innerText = "SUS Score: " + susScore;
-      });
-    });
-  </script>
 </section>
+
+<!-- SUS -->
+<section>
+<h2 class="sky-border-bottom">System Usability Scale (SUS)</h2>
+<p><strong>Enter numbers 1–5 only</strong></p>
+
+<form id="myForm">
+
+<div class="sus-question">
+<label>1. I would use this system frequently</label>
+<input type="number" class="form-control" id="q1" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>2. The system is unnecessarily complex</label>
+<input type="number" class="form-control" id="q2" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>3. The system is easy to use</label>
+<input type="number" class="form-control" id="q3" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>4. I need technical support</label>
+<input type="number" class="form-control" id="q4" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>5. Functions are well integrated</label>
+<input type="number" class="form-control" id="q5" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>6. Too much inconsistency</label>
+<input type="number" class="form-control" id="q6" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>7. Easy to learn quickly</label>
+<input type="number" class="form-control" id="q7" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>8. System is cumbersome</label>
+<input type="number" class="form-control" id="q8" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>9. I feel confident using it</label>
+<input type="number" class="form-control" id="q9" min="1" max="5" required>
+</div>
+
+<div class="sus-question">
+<label>10. Needed to learn a lot first</label>
+<input type="number" class="form-control" id="q10" min="1" max="5" required>
+</div>
+
+<button type="submit" class="btn btn-primary mt-3">Calculate Score</button>
+
+<div id="susResult"></div>
+
+</form>
+</section>
+
+</div>
+
+<script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let q1 = Number(document.getElementById("q1").value);
+  let q2 = Number(document.getElementById("q2").value);
+  let q3 = Number(document.getElementById("q3").value);
+  let q4 = Number(document.getElementById("q4").value);
+  let q5 = Number(document.getElementById("q5").value);
+  let q6 = Number(document.getElementById("q6").value);
+  let q7 = Number(document.getElementById("q7").value);
+  let q8 = Number(document.getElementById("q8").value);
+  let q9 = Number(document.getElementById("q9").value);
+  let q10 = Number(document.getElementById("q10").value);
+
+  q1--; q3--; q5--; q7--; q9--;
+  q2 = 5 - q2; q4 = 5 - q4; q6 = 5 - q6; q8 = 5 - q8; q10 = 5 - q10;
+
+  let score = (q1+q2+q3+q4+q5+q6+q7+q8+q9+q10) * 2.5;
+
+  document.getElementById("susResult").innerText = "SUS Score: " + score;
+});
+</script>
+
 </body>
 </html>
