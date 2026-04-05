@@ -1,33 +1,50 @@
 <!doctype html>
 <html lang="en">
+<!-- Bootstrap 5 CSS used for layout and responsive design
+Reference: https://www.w3schools.com/bootstrap5/bootstrap_get_started.php -->
+
 <head>
+  <!--
+This website is a usability report on Nordstrom.com. I used Bootstrap 5 to keep the layout clean and easy to follow, especially for the task sections with images, times, and notes about what the user struggled with.
+
+I added an interactive SUS calculator using JavaScript so users can enter values from 1–5 and get a score right away. The blue theme and section dividers help keep everything consistent and easy to read. I used the textbook to help me with JavaScript.
+
+Overall, I wanted the page to feel simple, organized, and clear while showing both the results and the process of the usability test.
+-->
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nordstrom Usability Test</title>
 
+  <!-- Bootstrap 5 CDN -->
+  <!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_get_started.php -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
-      background-color: #B3E5FC;
+      background-color: #B3E5FC; 
       font-family: sans-serif;
       font-size: 18px;
     }
 
+    /* Section header styling */
     h2.sky-border-bottom {
       border-bottom: 3px solid #007BFF;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
 
+    /* Task titles */
     .task-title {
       font-weight: bold;
     }
 
+    /* Spacing between SUS questions */
     .sus-question {
       margin-bottom: 20px;
     }
 
+    /* SUS result styling */
     #susResult {
       font-weight: bold;
       font-size: 1.3rem;
@@ -39,22 +56,27 @@
 </head>
 
 <body>
+
+<!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_containers.php -->
 <div class="container my-4">
 
 <h1 class="mb-4 text-center">Nordstrom.com Usability Test Report</h1>
 
-<!-- TASKS -->
 <section class="mb-5">
 <h2 class="sky-border-bottom">Tasks</h2>
+
+<!-- Bootstrap grid system for layout -->
+<!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php -->
 
 <!-- Task 1 -->
 <div class="row mb-5">
   <div class="col-md-6 text-center">
-    <img src="assets/shoes.png" class="img-fluid w-75">
+    <!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_images.php -->
+    <img src="assets/shoes.png" class="img-fluid w-75" alt="Shoes on sale">
   </div>
   <div class="col-md-6">
     <h4 class="task-title">1. Find a pair of shoes on sale for a first date.</h4>
-    <p>User searched for formal shoes, filtered by sale, and added a size 6M pair to cart. Initial shoes seemed too fancy or expensive.</p>
+    <p>User began by searching for formal shoes and immediately reacted to several options as “too fancy” and somewhat expensive. They applied filters to narrow results to sale items and continued browsing. After comparing a few options, they selected a more reasonable pair and added a size 6M to the cart. The user seemed slightly unsure at first but became more confident once filters were applied.</p>
     <p><strong>Time:</strong> 40.96 secs</p>
   </div>
 </div>
@@ -62,11 +84,12 @@
 <!-- Task 2 -->
 <div class="row mb-5">
   <div class="col-md-6 text-center">
-    <img src="assets/gifts.png" class="img-fluid w-75">
+    <img src="assets/gifts.png" class="img-fluid w-75" alt="Gift items">
   </div>
   <div class="col-md-6">
     <h4 class="task-title">2. Find a gift under $100.</h4>
-    <p>User selected a plush toy under $100 (dragon plush) and was excited about the item. No major difficulties navigating.</p>
+    <p>User searched for plush gift items and quickly became excited while browsing, reacting positively to multiple options. They specifically showed interest in a dragon plush, commenting on how “cute” it was and checking the price to ensure it was under $100. The user had no difficulty navigating and completed the task quickly, even continuing to browse plush items out of interest.
+</p></p>
     <p><strong>Time:</strong> 24.57 secs</p>
   </div>
 </div>
@@ -74,11 +97,12 @@
 <!-- Task 3 -->
 <div class="row mb-5">
   <div class="col-md-6 text-center">
-    <img src="assets/wallart.png" class="img-fluid w-75">
+    <img src="assets/wallart.png" class="img-fluid w-75" alt="Wall art">
   </div>
   <div class="col-md-6">
     <h4 class="task-title">3. Find the highest-priced wall art.</h4>
-    <p>User scrolled through wall art options but did not sort by price, so they did not immediately select the highest-priced item.</p>
+    <p>User searched for plush gift items and quickly became excited while browsing, reacting positively to multiple options. They specifically showed interest in a dragon plush, commenting on how “cute” it was and checking the price to ensure it was under $100. The user had no difficulty navigating and completed the task quickly, even continuing to browse plush items out of interest.
+</p></p>
     <p><strong>Time:</strong> 52.23 secs</p>
   </div>
 </div>
@@ -86,11 +110,11 @@
 <!-- Task 4 -->
 <div class="row mb-5">
   <div class="col-md-6 text-center">
-    <img src="assets/dress.png" class="img-fluid w-75">
+    <img src="assets/dress.png" class="img-fluid w-75" alt="Wedding dress">
   </div>
   <div class="col-md-6">
     <h4 class="task-title">4. Find wedding-appropriate apparel.</h4>
-    <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer</p>
+    <p>User navigated to the wall art section and began scrolling through available products. They expressed surprise at some of the prices and spent time looking around but did not use the sorting feature to organize items by price. As a result, they did not identify the highest-priced item and relied only on manual scrolling, which made the task less efficient.</p>
     <p><strong>Time:</strong> 45.12 secs</p>
   </div>
 </div>
@@ -98,22 +122,25 @@
 <!-- Task 5 -->
 <div class="row mb-5">
   <div class="col-md-6 text-center">
-    <img src="assets/appointment.png" class="img-fluid w-75">
+    <img src="assets/appointment.png" class="img-fluid w-75" alt="Appointment booking">
   </div>
   <div class="col-md-6">
     <h4 class="task-title">5. Book a styling appointment.</h4>
-    <p>User navigated menus to find the in-store styling appointment page and successfully booked it. User was slightly confused locating it initially in the footer</p>
+    <p>User attempted to book an in-store styling appointment and first verified the store location. They scrolled to the footer expecting to find the service but were unable to locate it there. The user then explored multiple navigation headers before eventually finding the styling appointment option. They appeared slightly nervous during this process but successfully completed the booking after some trial and error.
+</p></p>
     <p><strong>Time:</strong> 140.52 secs</p>
   </div>
 </div>
 
 </section>
 
-<!-- SUS -->
 <section>
 <h2 class="sky-border-bottom">System Usability Scale (SUS)</h2>
-<p><strong>Enter numbers 1–5 only</strong></p>
 
+<p><strong>Please enter a number from 1–5 for each question.</strong></p>
+
+<!-- SUS Form -->
+<!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_forms.php -->
 <form id="myForm">
 
 <div class="sus-question">
@@ -166,8 +193,12 @@
 <input type="number" class="form-control" id="q10" min="1" max="5" required>
 </div>
 
+<!-- Button -->
+<!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_buttons.php -->
 <button type="submit" class="btn btn-primary mt-3">Calculate Score</button>
 
+<!-- Result display -->
+<!-- Reference: https://www.w3schools.com/jsref/prop_html_innertext.asp -->
 <div id="susResult"></div>
 
 </form>
@@ -175,10 +206,19 @@
 
 </div>
 
+<!-- JavaScript -->
 <script>
+
+/* Event listener for form submission */
+/* Reference: https://www.w3schools.com/js/js_htmldom_eventlistener.asp */
 document.getElementById("myForm").addEventListener("submit", function(event) {
+
+  /* Prevent page refresh */
+  /* Reference: https://www.w3schools.com/jsref/event_preventdefault.asp */
   event.preventDefault();
 
+  /* Get values from inputs */
+  /* Reference: https://www.w3schools.com/js/js_htmldom_elements.asp */
   let q1 = Number(document.getElementById("q1").value);
   let q2 = Number(document.getElementById("q2").value);
   let q3 = Number(document.getElementById("q3").value);
@@ -190,13 +230,17 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   let q9 = Number(document.getElementById("q9").value);
   let q10 = Number(document.getElementById("q10").value);
 
+  /* SUS scoring formula */
+  /* Reference: https://www.w3schools.com/js/js_arithmetic.asp */
   q1--; q3--; q5--; q7--; q9--;
   q2 = 5 - q2; q4 = 5 - q4; q6 = 5 - q6; q8 = 5 - q8; q10 = 5 - q10;
 
   let score = (q1+q2+q3+q4+q5+q6+q7+q8+q9+q10) * 2.5;
 
+  /* Display result */
   document.getElementById("susResult").innerText = "SUS Score: " + score;
 });
+
 </script>
 
 </body>
