@@ -137,7 +137,7 @@ Overall, I wanted the page to feel simple, organized, and clear while showing bo
 <section>
 <h2 class="sky-border-bottom">System Usability Scale (SUS)</h2>
 
-<p><strong>Please enter a number from 1–5 for each question.</strong></p>
+<p><strong>Enter a number 1 to 5 where 1 indicates "Strongly Disagree" and 5 indicates "Strongly Agree".</strong></p>
 
 <!-- SUS Form -->
 <!-- Reference: https://www.w3schools.com/bootstrap5/bootstrap_forms.php -->
@@ -231,7 +231,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   let q10 = Number(document.getElementById("q10").value);
 
   /* SUS scoring formula */
-  /* Reference: https://www.w3schools.com/js/js_arithmetic.asp */
+  /* Reference: https://www.w3schools.com/js/js_arithmetic.asp and the textbook*/
   q1--; q3--; q5--; q7--; q9--;
   q2 = 5 - q2; q4 = 5 - q4; q6 = 5 - q6; q8 = 5 - q8; q10 = 5 - q10;
 
