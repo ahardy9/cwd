@@ -144,7 +144,7 @@ Overall, I wanted the page to feel simple, organized, and clear while showing bo
 <form id="myForm">
 
 <div class="sus-question">
-<label>1. I would use this system frequently</label>
+<label for="q1">1. I would use this system frequently</label>
 <input type="number" class="form-control" id="q1" min="1" max="5" required>
 </div>
 
@@ -240,7 +240,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
   /* Display result */
   document.getElementById("susResult").innerText = "SUS Score: " + score;
 });
-
+//The JS doesn't work unless I put it in the HTML as well.
 </script>
 
 </body>
